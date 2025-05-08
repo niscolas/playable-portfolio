@@ -2,8 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://blmxvlmn84nep" path="res://icon.svg" id="1_o5qli"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Root" type="Node3D"]
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(389, 228)
+[node name="Logo" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
 texture = ExtResource("1_o5qli")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 2.44079, 0)
+
+[node name="Player" type="Sprite3D" parent="."]
